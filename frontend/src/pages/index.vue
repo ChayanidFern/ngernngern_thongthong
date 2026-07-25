@@ -106,7 +106,7 @@ onMounted(() => {
             </VListItem>
           </VList>
           <VCardActions>
-            <RouterLink :to="{ name: 'transaction-page' }">
+            <RouterLink :to="'/transaction-page'">
               <VBtn variant="text" size="small">ดูรายการทั้งหมด</VBtn>
             </RouterLink>
           </VCardActions>
