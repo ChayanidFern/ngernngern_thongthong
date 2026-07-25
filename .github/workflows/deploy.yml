@@ -63,6 +63,8 @@ jobs:
         run: pnpm typecheck
 
       - name: Build
+
+      - name: Build
         run: pnpm build
         env:
           VITE_BACKEND_URL: ${{ secrets.VITE_BACKEND_URL }}
