@@ -59,6 +59,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile --ignore-scripts
 
+      - name: Generate route types
+        run: VITE_BACKEND_URL=http://placeholder npx vite build --emptyOutDir 2>&1 || true
+        env:
+          NO_COLOR: 1
+
       - name: Typecheck
         run: pnpm typecheck
 
