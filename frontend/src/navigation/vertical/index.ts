@@ -8,6 +8,11 @@ export default [
     icon: { icon: 'ri-home-line' },
   },
   {
+    title: 'รายรับรายจ่าย',
+    to: { name: 'transaction-page' },
+    icon: { icon: 'ri-wallet-line' },
+  },
+  {
     heading: 'Admin',
   },
   {
